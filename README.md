@@ -1,12 +1,23 @@
-# Financial Report Generator Agent
+# Financial Report Generator AI Agent
 
-End-to-end, notebook-driven agent that **fetches market data**, **summarizes news**, **creates a polished financial report**, and **emails it to your recipients** — all in one run.
+End-to-end, AI Agent-driven that **fetches market data**, **summarizes news**, **creates a polished financial report**, and **emails it to your recipients** — all in one run. Just give it the Company name , origin and if you want to mail it than recipient Gamail.
 
 ---
 
-## What it does (at a glance)
+## What it does 
 
-- Pulls prices and metrics from **Yahoo Finance** and **Alpha Vantage**.
+### 📊 Data Sources
+
+- Pulls prices and metrics from **Yahoo Finance** and **Alpha Vantage** .   
+  - **Stock fundamentals** → Market Cap, PE Ratio, EPS, Dividend Yield, etc.  
+  - **Historical stock data** → Open, High, Low, Close, Volume (daily)  
+  - **Latest financial news** → Headlines & summaries related to the company  
+  - **Key financial ratios & performance indicators**  
+
+👉 This is **time-series data**, usually daily, but can be customized  
+   (e.g., `period='1mo'`, `interval='1d'`, etc.).
+
+  
 - Finds fresh headlines using **DuckDuckGo Search**.
 - Uses an **LLM (Gemini via `langchain_google_genai`)** to draft narrative insights.
 - Renders a **clean, structured HTML report** (optionally PDF/Markdown if you add exporters).
