@@ -61,17 +61,15 @@ Main_agent.ipynb   # Jupyter Notebook containing the full pipeline
 
 ---
 
-## Functions discovered in the notebook
+## Custom AI TOOLs
 
 - `get_ticker_symbol(...)` – Normalize/validate a user-entered company/ticker.
-- `get_yahoo_finance_data(...)` – Pull OHLCV and simple stats with `yfinance`.
-- `get_alpha_vantage_data(...)` – Fetch indicators/series from Alpha Vantage.
+- `get_yahoo_finance_data(...)` – Pull OHLCV and Stock Market Data, simple stats with `yfinance`.
+- `get_alpha_vantage_data(...)` – Fetch indicators/series Stock Market Data from Alpha Vantage.
 - `get_financial_news(...)` – Use DuckDuckGo Search to find recent news.
 - `get_llm(...)` – Instantiate the LLM (Gemini via LangChain Google GenAI).
 - `generate_financial_report(...)` – Orchestrate data + news + LLM to produce HTML.
-- `send_mail(...)` – Deliver the final HTML via Gmail (LangChain Google Community).
-
-> These names were extracted programmatically from the notebook and may have optional parameters in your implementation.
+- `send_mail(...)` – Deliver the final HTML based structured report via Gmail (LangChain Google Community).
 
 ---
 
